@@ -58,8 +58,6 @@ const CarWashRoute: () => Node = () => {
                            НАЙБЛИЖЧА АВТОМИЙКА
                        </Text>
 
-
-
                    </View>
                    <View style={styles.main_data}>
                        <View style={styles.main_container_info1}>
