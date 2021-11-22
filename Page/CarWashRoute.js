@@ -57,6 +57,7 @@ const CarWashRoute: () => Node = () => {
                        <Text style={styles.main_button}>
                            НАЙБЛИЖЧА АВТОМИЙКА
                        </Text>
+
                    </View>
                    <View style={styles.main_data}>
                        <View style={styles.main_container_info1}>
