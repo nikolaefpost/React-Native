@@ -53,6 +53,7 @@ const CarWashRoute: () => Node = () => {
            </View>
            <View style={styles.bottom_field}>
 
+
                <View style={styles.main_container}>
                    <View style={styles.main_button1}>
                        <Text style={styles.main_button}>
