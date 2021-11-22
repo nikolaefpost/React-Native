@@ -42,7 +42,6 @@ import GoogleMaps from "../Components/GoogleMaps";
 
 
 
-
 const CarWashRoute: () => Node = () => {
     return (
        <SafeAreaView style={styles.container}>
