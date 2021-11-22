@@ -46,6 +46,7 @@ const CarWashRoute: () => Node = () => {
     return (
        <SafeAreaView style={styles.container}>
            <GoogleMaps/>
+
            <View style={styles.top_field}>
 
             <MenuIcon/>
@@ -55,9 +56,11 @@ const CarWashRoute: () => Node = () => {
 
                <View style={styles.main_container}>
                    <View style={styles.main_button1}>
+
                        <Text style={styles.main_button}>
                            НАЙБЛИЖЧА АВТОМИЙКА
                        </Text>
+
                    </View>
                    <View style={styles.main_data}>
                        <View style={styles.main_container_info1}>
@@ -125,17 +128,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         paddingVertical: 8,
         color: "#000000",
-
         borderRadius: 18,
         textAlign: "center",
-
         fontSize: 12,
         marginBottom: -2,
+
+
     },
     main_button1: {
-
-        paddingTop: 8,
-
+        paddingTop: 4,
         marginBottom: 6,
         borderRadius: 18,
         textAlign: "center",
@@ -146,7 +147,10 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.1,
         shadowRadius: 3.84,
-        elevation: 2,
+        elevation: 1,
+
+
+
 
     },
     main_container_info1: {
