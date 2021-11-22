@@ -49,6 +49,7 @@ const CarWashRoute: () => Node = () => {
            <View style={styles.top_field}>
             <MenuIcon/>
 
+
            </View>
            <View style={styles.bottom_field}>
 
