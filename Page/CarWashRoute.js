@@ -18,7 +18,7 @@ import {
     LearnMoreLinks,
     ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Shadow } from 'react-native-neomorph-shadows';
 
 
@@ -36,6 +36,7 @@ import Time from "../Icon/Time";
 import ButtonScanner from "../Icon/ButtonScanner";
 import Point from "../Icon/Point";
 import More from "../Icon/More";
+import GoogleMaps from "../components/GoogleMaps";
 
 
 
@@ -47,7 +48,7 @@ const CarWashRoute: () => Node = () => {
        <SafeAreaView style={styles.container}>
            <View style={styles.top_field}>
             <MenuIcon/>
-
+               <GoogleMaps/>
            </View>
            <View style={styles.bottom_field}>
 
