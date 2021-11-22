@@ -36,6 +36,7 @@ import Time from "../Icon/Time";
 import ButtonScanner from "../Icon/ButtonScanner";
 import Point from "../Icon/Point";
 import More from "../Icon/More";
+import GMap from "../Components/GMap";
 
 
 
