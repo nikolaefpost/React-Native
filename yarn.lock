@@ -988,14 +988,6 @@
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-"@react-native-community/art@react-native-community/art":
-  version "1.2.0"
-  resolved "https://codeload.github.com/react-native-community/art/tar.gz/e4a97cd03ec992182d326286be04b0b49267ffef"
-  dependencies:
-    art "^0.10.3"
-    invariant "^2.2.4"
-    prop-types "^15.7.2"
-
 "@react-native-community/cli-debugger-ui@^6.0.0-rc.0":
   version "6.0.0-rc.0"
   resolved "https://registry.npmjs.org/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-6.0.0-rc.0.tgz"

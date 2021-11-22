@@ -9,8 +9,8 @@ import React from "react";
 const styles = StyleSheet.create({
     container: {
         ...StyleSheet.absoluteFillObject,
-        height: '100%',
-        width: '100%',
+        height: 400,
+        width: 400,
         justifyContent: 'flex-end',
         alignItems: 'center',
     },
@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
         ...StyleSheet.absoluteFillObject,
     },
 });
-
 
 const GoogleMaps = () => (
     <View style={styles.container}>

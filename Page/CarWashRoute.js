@@ -42,25 +42,21 @@ import GoogleMaps from "../Components/GoogleMaps";
 
 
 
+
 const CarWashRoute: () => Node = () => {
     return (
        <SafeAreaView style={styles.container}>
-           <GoogleMaps/>
-
            <View style={styles.top_field}>
-
             <MenuIcon/>
-
+            <GoogleMaps/>
            </View>
            <View style={styles.bottom_field}>
 
                <View style={styles.main_container}>
                    <View style={styles.main_button1}>
-
                        <Text style={styles.main_button}>
                            НАЙБЛИЖЧА АВТОМИЙКА
                        </Text>
-
                    </View>
                    <View style={styles.main_data}>
                        <View style={styles.main_container_info1}>
@@ -128,15 +124,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         paddingVertical: 8,
         color: "#000000",
+
         borderRadius: 18,
         textAlign: "center",
+
         fontSize: 12,
         marginBottom: -2,
-
-
     },
     main_button1: {
-        paddingTop: 4,
+
+        paddingTop: 8,
+
         marginBottom: 6,
         borderRadius: 18,
         textAlign: "center",
@@ -147,10 +145,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.1,
         shadowRadius: 3.84,
-        elevation: 1,
-
-
-
+        elevation: 2,
 
     },
     main_container_info1: {
@@ -246,7 +241,6 @@ const styles = StyleSheet.create({
         flex: 1.1,
         marginTop: 20,
         backgroundColor: '#FFFFFF',
-        opacity: 0.7,
         paddingVertical: 8,
         shadowColor: "#000000",
         shadowOffset: {
