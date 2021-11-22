@@ -45,9 +45,11 @@ import GoogleMaps from "../Components/GoogleMaps";
 const CarWashRoute: () => Node = () => {
     return (
        <SafeAreaView style={styles.container}>
+           <GoogleMaps/>
            <View style={styles.top_field}>
+
             <MenuIcon/>
-            <GoogleMaps/>
+
            </View>
            <View style={styles.bottom_field}>
 
@@ -240,6 +242,7 @@ const styles = StyleSheet.create({
         flex: 1.1,
         marginTop: 20,
         backgroundColor: '#FFFFFF',
+        opacity: 0.7,
         paddingVertical: 8,
         shadowColor: "#000000",
         shadowOffset: {
