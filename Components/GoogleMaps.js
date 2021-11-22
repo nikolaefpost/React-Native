@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     },
 });
 
+
 const GoogleMaps = () => (
     <View style={styles.container}>
         <MapView
