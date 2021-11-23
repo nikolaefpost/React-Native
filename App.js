@@ -27,7 +27,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Loading from "./Page/Loading";
-import Example from "./Page/Example";
+
 import CarWashRoute from "./Page/CarWashRoute";
 
 

@@ -2,28 +2,11 @@ import React from 'react';
 import type {Node} from 'react';
 import {
     SafeAreaView,
-    ScrollView,
-    StatusBar,
     StyleSheet,
     Text,
-    useColorScheme,
     View,
     Image
 } from 'react-native';
-
-import {
-    Colors,
-    DebugInstructions,
-    Header,
-    LearnMoreLinks,
-    ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import MapView from 'react-native-maps';
-import { Shadow } from 'react-native-neomorph-shadows';
-
-
-
-
 
 import MenuIcon from "../Icon/MenuIcon";
 import Star from "../Icon/Star";
@@ -40,27 +23,22 @@ import GoogleMaps from "../Components/GoogleMaps";
 
 
 
-
-
 const CarWashRoute: () => Node = () => {
+    const color = {green: '#06C975', yellow: '#D0C02B'};
+    const images = ['Item.png'];
     return (
        <SafeAreaView style={styles.container}>
            <GoogleMaps/>
-
            <View style={styles.top_field}>
-
             <MenuIcon/>
-
            </View>
            <View style={styles.bottom_field}>
 
                <View style={styles.main_container}>
                    <View style={styles.main_button1}>
-
                        <Text style={styles.main_button}>
                            НАЙБЛИЖЧА АВТОМИЙКА
                        </Text>
-
                    </View>
                    <View style={styles.main_data}>
                        <View style={styles.main_container_info1}>
@@ -77,32 +55,25 @@ const CarWashRoute: () => Node = () => {
                        <View style={styles.main_container_info2}>
                            <View style={styles.main_container_info2_block}>
                             <Round/>
-                            <Text style={[styles.main_container_info2_block_text,{backgroundColor: '#06C975',}]}>22</Text>
+                            <Text style={[styles.main_container_info2_block_text,{backgroundColor: color.green,}]}>22</Text>
                            </View>
                            <View style={styles.main_container_info2_block}>
                                <Distance/>
-                               <Text style={[styles.main_container_info2_block_text,{backgroundColor: '#D0C02B',}]}>1.4</Text>
+                               <Text style={[styles.main_container_info2_block_text,{backgroundColor: color.yellow,}]}>1.4</Text>
                            </View>
                            <View style={styles.main_container_info2_block}>
                                <Discount/>
-                               <Text style={[styles.main_container_info2_block_text,{backgroundColor: '#D0C02B',}]}>5%</Text>
+                               <Text style={[styles.main_container_info2_block_text,{backgroundColor: color.yellow,}]}>5%</Text>
                            </View>
                        </View>
                        <Text style={styles.main_container_rout}>Прокласти маршрут</Text>
                        <Text style={styles.main_container_pay}>Обрати бокс та сплатити</Text>
-
-
                    </View>
-
                    <View style={styles.bottom_menu}>
-
-
                         <View style={styles.bottom_menu_bottom}>
-                                    <Home/><Time/><ButtonScanner style={{marginBottom: -6}}/><Point/><More style={{marginBottom: 6}}/>
+                            <Home/><Time/><ButtonScanner style={{marginBottom: -6}}/><Point/><More style={{marginBottom: 6}}/>
                         </View>
-
                    </View>
-
                </View>
            </View>
        </SafeAreaView>
@@ -132,8 +103,6 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontSize: 12,
         marginBottom: -2,
-
-
     },
     main_button1: {
         paddingTop: 4,
@@ -148,10 +117,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.1,
         shadowRadius: 3.84,
         elevation: 1,
-
-
-
-
     },
     main_container_info1: {
 
@@ -164,7 +129,6 @@ const styles = StyleSheet.create({
         color: '#000000',
         fontWeight: 'bold',
         fontSize: 18,
-
     },
     main_container_info1_adress: {
         fontSize: 12,
@@ -239,7 +203,6 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.1,
         shadowRadius: 3.84,
-
         elevation: 5,
     },
     bottom_menu: {
@@ -256,9 +219,8 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.1,
         shadowRadius: 3.84,
         borderRadius: 24,
-
         elevation: 5,
-
+        borderTop:'2 solid red',
         justifyContent: 'flex-end',
 
     },
@@ -270,10 +232,7 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
         borderRadius: 24,
         paddingHorizontal: 16,
-
     },
-
-
 });
 
 export default CarWashRoute;
