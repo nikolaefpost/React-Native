@@ -25,7 +25,7 @@ import GoogleMaps from "../Components/GoogleMaps";
 
 const CarWashRoute: () => Node = () => {
     const color = {green: '#06C975', yellow: '#D0C02B'};
-    const images = ['Item.png'];
+    const src = require('./Item.png')
     return (
        <SafeAreaView style={styles.container}>
            <GoogleMaps/>
@@ -50,7 +50,7 @@ const CarWashRoute: () => Node = () => {
                                    <Text style={styles.main_container_info1_star_text}>4.2</Text>
                                </View>
                            </View>
-                           <Image source={require('./Item.png')} />
+                           <Image source={src} />
                        </View>
                        <View style={styles.main_container_info2}>
                            <View style={styles.main_container_info2_block}>
